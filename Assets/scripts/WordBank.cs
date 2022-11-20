@@ -7,8 +7,8 @@ public class WordBank : MonoBehaviour
 {
     private List<string> OrginalWords= new List<string>()
     {
-        "zwizzle","abdicate","easiness ","galactico","haematophagous","labour ","dettabayo","oakland","quadriliteral","potato","radicalization","hysteresis","tacheometer","zebra","xmas"
-
+       "dog","abdicate","easiness","galactico","xmas","labour","dettabayo","oakland","unity","potato","cat"
+        
     };
     private List<string> WorkingWords= new List<string>();
 
@@ -49,12 +49,17 @@ public class WordBank : MonoBehaviour
         {
             newword=WorkingWords.Last();
             WorkingWords.Remove(newword);
+            return newword;
         }
         else
         {
             WordSetup();
+            newword=WorkingWords.Last();
+             WorkingWords.Remove(newword);
+             return newword;
         }
-        return newword;
+        
+        
     }
 
    

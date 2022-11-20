@@ -74,6 +74,7 @@ void Update()
             GameManager.instance.GameState=false;
             ResetTimer();
             Typer.typer.SetCurrentWord();
+            Typer.typer.wordcount=0;
             
             
     }
